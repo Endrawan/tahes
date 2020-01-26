@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--  Pressed -->
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/facebook"/>
+            <corners android:radius="@dimen/radius_small"/>
+        </shape>
+    </item>
+
+    <!--  Focused states -->
+    <item android:state_focused="true">
+        <shape>
+            <solid android:color="@color/facebook"/>
+            <corners android:radius="@dimen/radius_small"/>
+        </shape>
+    </item>
+
+    <!--  Non focused states -->
+    <item>
+        <shape>
+            <solid android:color="@color/facebook"/>
+            <corners android:radius="@dimen/radius_small"/>
+        </shape>
+    </item>
+
+</selector>
