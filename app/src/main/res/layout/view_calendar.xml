@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/padding_small">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/AppTheme.Calendar.Day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S" />
+
+
+        <TextView
+            style="@style/AppTheme.Calendar.DayNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="23" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/AppTheme.Calendar.Day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S" />
+
+
+        <TextView
+            style="@style/AppTheme.Calendar.DayNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="24" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/AppTheme.Calendar.Day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="R" />
+
+
+        <TextView
+            style="@style/AppTheme.Calendar.DayNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="25" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/AppTheme.Calendar.Day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="K" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_circle_black_24dp"
+                android:tint="@color/colorPrimary"
+                android:layout_gravity="center"/>
+
+            <TextView
+                style="@style/AppTheme.Calendar.DayNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="26" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/AppTheme.Calendar.Day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="J" />
+
+
+        <TextView
+            style="@style/AppTheme.Calendar.DayNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="27" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/AppTheme.Calendar.Day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="S" />
+
+
+        <TextView
+            style="@style/AppTheme.Calendar.DayNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="28" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/AppTheme.Calendar.Day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="M" />
+
+
+        <TextView
+            style="@style/AppTheme.Calendar.DayNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="29" />
+    </LinearLayout>
+
+</LinearLayout>

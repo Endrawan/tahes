@@ -1,7 +1,8 @@
-package com.endrawan.tahes
+package com.endrawan.tahes.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import com.endrawan.tahes.R
 import kotlinx.android.synthetic.main.activity_forget_password.*
 
 class ForgetPasswordActivity : AppCompatActivity() {

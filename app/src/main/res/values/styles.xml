@@ -63,4 +63,15 @@
         <item name="android:background">@drawable/button_google</item>
     </style>
 
+    <style name="AppTheme.Calendar.Day" parent="AppTheme">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/darkGray</item>
+        <item name="android:layout_marginBottom">@dimen/margin_small</item>
+    </style>
+
+    <style name="AppTheme.Calendar.DayNumber" parent="AppTheme">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
 </resources>

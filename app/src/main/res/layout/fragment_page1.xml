@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:paddingStart="@dimen/padding_normal"
     android:paddingEnd="@dimen/padding_normal"
-    tools:context=".sign_up.Page1Fragment">
+    tools:context=".ui.sign_up.Page1Fragment">
 
     <TextView
         android:id="@+id/textView"

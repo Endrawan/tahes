@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingStart="@dimen/padding_small"
     android:paddingEnd="@dimen/padding_small"
-    tools:context=".sign_up.Page4Fragment">
+    tools:context=".ui.sign_up.Page4Fragment">
 
     <TextView
         android:id="@+id/textView"
