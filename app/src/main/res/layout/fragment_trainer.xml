@@ -44,6 +44,9 @@
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
         android:clipToPadding="false"
-        android:paddingBottom="?actionBarSize"/>
+        android:paddingBottom="64dp"
+        android:paddingStart="@dimen/padding_xsmall"
+        android:paddingEnd="@dimen/padding_xsmall"
+        android:paddingTop="@dimen/padding_xsmall"/>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,14 +1,71 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<?xml version="1.0" encoding="utf-8"?><!--<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    tools:context=".ui.menu.FoodFragment">-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.menu.WorkoutFragment">
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        style="@style/AppTheme.TextView.Title"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:gravity="center_horizontal"
+        android:text="Lihat Workout"
+        android:textSize="@dimen/heading3" />
 
-</FrameLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="8dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:drawableEnd="@drawable/ic_search_light_gray_20dp"
+            android:gravity="center_vertical"
+            android:hint="Cari workout..."
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="@dimen/heading5" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <include layout="@layout/view_categories" />
+
+    <TextView
+        style="@style/AppTheme.TextView.Title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginEnd="@dimen/margin_normal"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:text="Workout Pilihan"
+        android:textSize="@dimen/heading3" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingStart="@dimen/padding_small"
+        android:paddingEnd="@dimen/padding_small"
+        android:paddingBottom="60dp" />
+
+</LinearLayout>
+
+    <!--</androidx.core.widget.NestedScrollView>-->

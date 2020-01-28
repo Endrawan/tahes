@@ -2,23 +2,25 @@ package com.endrawan.tahes.ui.menu
 
 
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import com.endrawan.tahes.R
+import com.endrawan.tahes.adapters.WorkoutsAdapter
+import com.endrawan.tahes.models.Dummy
+import kotlinx.android.synthetic.main.fragment_workout.*
 
 /**
  * A simple [Fragment] subclass.
  */
-class WorkoutFragment : Fragment() {
+class WorkoutFragment : Fragment(R.layout.fragment_workout) {
 
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_workout, container, false)
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        recyclerView.adapter = WorkoutsAdapter(Dummy.workouts)
+        recyclerView.layoutManager = LinearLayoutManager(activity, RecyclerView.HORIZONTAL, false)
     }
 
 

@@ -25,4 +25,10 @@ object Dummy {
         Action("Makan Malam", "19:00 PM", "1000 kkal", ACTION_TYPE_FOOD, foods)
     )
 
+    val workouts = listOf(
+        Workout("12 Gerakan", "1.5 Jam", "-500 Kalori", "Ultra Persian", "Advanced Difficulty", R.drawable.sample),
+        Workout("12 Gerakan", "1.5 Jam", "-500 Kalori", "Ultra Persian", "Advanced Difficulty", R.drawable.sample),
+        Workout("12 Gerakan", "1.5 Jam", "-500 Kalori", "Ultra Persian", "Advanced Difficulty", R.drawable.sample)
+    )
+
 }
