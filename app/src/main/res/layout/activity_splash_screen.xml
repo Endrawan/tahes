@@ -6,9 +6,11 @@
     tools:context=".ui.SplashScreenActivity">
 
     <ImageView
+        android:id="@+id/icon"
         android:layout_width="@dimen/icon_splash_screen"
         android:layout_height="@dimen/icon_splash_screen"
         android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher"/>
+        android:scaleType="fitCenter"
+        tools:src="@drawable/logo" />
 
 </FrameLayout>

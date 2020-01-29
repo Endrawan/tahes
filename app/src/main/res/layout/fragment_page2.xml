@@ -4,8 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingStart="@dimen/padding_normal"
-    android:paddingEnd="@dimen/padding_normal"
     tools:context=".ui.sign_up.Page2Fragment">
 
     <TextView
@@ -17,6 +15,8 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout5"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="spread_inside"
+        android:paddingStart="@dimen/padding_normal"
+        android:paddingEnd="@dimen/padding_normal"
         tools:layout_editor_absoluteX="16dp" />
 
     <LinearLayout
@@ -28,10 +28,12 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ImageView
+            android:id="@+id/image"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
-            android:layout_marginBottom="@dimen/margin_normal"/>
+            android:layout_height="200dp"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:scaleType="centerInside"
+            tools:src="@drawable/choose_focus" />
 
         <TextView
             android:layout_width="match_parent"
@@ -39,13 +41,17 @@
             android:text="Badan Ideal"
             style="@style/AppTheme.TextView.Title"
             android:gravity="center_horizontal"
-            android:layout_marginBottom="@dimen/margin_small"/>
+            android:layout_marginBottom="@dimen/margin_small"
+            android:paddingStart="@dimen/padding_normal"
+            android:paddingEnd="@dimen/padding_normal" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             style="@style/AppTheme.TextView.Subtitle"
             android:gravity="center_horizontal"
+            android:paddingStart="@dimen/padding_normal"
+            android:paddingEnd="@dimen/padding_normal"
             android:text="Bangun badanmu menjadi ideal yang asalnya kurus atau gemuk"/>
 
     </LinearLayout>

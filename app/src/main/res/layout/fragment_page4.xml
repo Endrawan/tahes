@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:paddingStart="@dimen/padding_small"
-    android:paddingEnd="@dimen/padding_small"
+    android:paddingStart="@dimen/padding_normal"
+    android:paddingEnd="@dimen/padding_normal"
     tools:context=".ui.sign_up.Page4Fragment">
 
     <TextView
@@ -28,9 +28,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <ImageView
+            android:id="@+id/image"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@mipmap/ic_launcher"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            tools:src="@drawable/welcome"
             android:layout_marginBottom="@dimen/margin_normal"/>
 
         <TextView
